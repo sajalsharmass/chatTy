@@ -49,7 +49,7 @@ class login : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
 
-                    val intent = Intent(this@login, MainActivity::class.java)
+                    val intent = Intent(this@login, MainPage::class.java)
                     startActivity(intent)
                 } else {
                     Toast.makeText(this@login, "User does no exist", Toast.LENGTH_SHORT).show()

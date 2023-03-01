@@ -42,7 +42,7 @@ class signup : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
 
-                   val intent = Intent(this@signup, MainActivity::class.java)
+                   val intent = Intent(this@signup, MainPage::class.java)
                     startActivity(intent)
                 } else {
 
